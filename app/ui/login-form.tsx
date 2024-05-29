@@ -11,6 +11,7 @@ import { Button } from './button';
 
 import { useFormState, useFormStatus } from 'react-dom';
 import { authenticate } from '@/app/lib/actions';
+import Link from 'next/link';
 
 export default function LoginForm() {
 
@@ -75,6 +76,14 @@ export default function LoginForm() {
               <p className="text-sm text-red-500">{errorMessage}</p>
             </>
           )}
+        </div>
+        <div>
+          <p className={`${lusitana.className}`}>
+            Don't have an account?
+          </p>
+          <Link href={'/register'} className={`${lusitana.className} text-blue-600 font-semibold hover:text-blue-400`}>
+            Register here!
+          </Link>
         </div>
       </div>
     </form>
