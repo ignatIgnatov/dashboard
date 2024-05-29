@@ -79,7 +79,7 @@ export default function LoginForm() {
         </div>
         <div>
           <p className={`${lusitana.className}`}>
-            Don't have an account?
+            Don&apos;t have an account?
           </p>
           <Link href={'/register'} className={`${lusitana.className} text-blue-600 font-semibold hover:text-blue-400`}>
             Register here!
